@@ -8,6 +8,9 @@
     <meta name="keywords" content="tattoo artist, tattoo studio, tattoo">
     <meta property="og:image" content="images/kristian-angelo-ogg.jpg">
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Raleway:ital,wght@0,400;0,500;0,600;1,100&family=Rozha+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/main.css">
     <title>Void Tattoo</title>
 </head>
@@ -16,8 +19,8 @@
     <a href="index.html">
         <img src="images/the-void-tattoo-logo.png" alt="tattoo artist site logo">
     </a>
-    <nav role="navigation">
-        <ul>
+    <nav class="header__nav" role="navigation">
+        <ul class="header__nav__list">
             <li>
                 <a href="#">Home</a>
             </li>
@@ -38,7 +41,7 @@
             </li>
         </ul>
     </nav>
-    <div>
+    <div class="socials">
         <a href="#">
             <img src="images/la_facebook-f.svg" alt="facebook logo">
         </a>
@@ -56,20 +59,23 @@
         </a>
     </div>
 </header>
-<section>
+<section class="billboard">
     <h1>
         I’m Void Sir.
     </h1>
-    <p>
+    <p class="billboard__info">
         Tattoos have their own unique power and magic. They not only beautify the body but also the psyche.
     </p>
     <button>
         Read more
         <img src="images/Vector.png" alt="">
     </button>
+    <p class="billboard__text">
+      Tattoo expert
+    </p>
 </section>
-<section>
-    <div>
+<section class="my__story">
+    <div class="my__story__number">
         01
     </div>
     <div>
@@ -93,7 +99,7 @@
         </div>
     </div>
 </section>
-<section>
+<section class="gallery">
     <h2>
         Check my gallery:
     </h2>
@@ -111,41 +117,41 @@
     </button>
 </section>
 <section>
-    <div>
+    <div class="skills">
         <div>
-            <div>90%</div>
+            <div class="skills__numbers">90%</div>
             <p>
                 Full body tattoo
             </p>
         </div>
         <div>
-            <div>80%</div>
+            <div class="skills__numbers">80%</div>
             <p>
                 Safely Piercing
             </p>
         </div>
         <div>
-            <div>75%</div>
+            <div class="skills__numbers">75%</div>
             <p>
                 Full colour tattoo
             </p>
         </div>
         <div>
-            <div>95%</div>
+            <div class="skills__numbers">95%</div>
             <p>
                 Temporary tattoo
             </p>
         </div>
     </div>
-    <div>
+    <div class="reviews">
         <img src="images/Quotes.png" alt="quotes image">
         <div>
-            <p>
+            <p class="reviews__text">
                 The entire team is extremely kind and friendly. They're fantastic. They're great at what they do! And
                 it's unique. They will properly consult with you.
             </p>
             <div>
-                <p><strong>Jack Geoffrey</strong> | Tattoo Artist</p>
+                <p class="reviews__text__author"><strong>Jack Geoffrey</strong> | Tattoo Artist</p>
                 <div>
                     <img src="images/Vector3.png" alt="">
                     <img src="images/Vector4.png" alt="">
@@ -154,7 +160,7 @@
         </div>
     </div>
 </section>
-<section>
+<section class="watch__interview">
     <h2>
         “Consider what you desire. Your tattoo artist will never tell you what tattoo to have.”
     </h2>
@@ -163,8 +169,8 @@
         Watch it now
     </button>
 </section>
-<section>
-    <article>
+<section class="articles">
+    <article class="articles__item">
         <h4>
             Articles:
         </h4>
@@ -174,7 +180,7 @@
             Feb 16, 2021
         </p>
     </article>
-    <article>
+    <article class="articles__item">
         <h4>
             Articles:
         </h4>
@@ -184,7 +190,7 @@
             Feb 17, 2021
         </p>
     </article>
-    <article>
+    <article class="articles__item">
         <h4>
             Articles:
         </h4>
@@ -195,57 +201,59 @@
         </p>
     </article>
 </section>
-<section>
+<section class="contact__form">
     <div>
         <h2>
             Get in touch with me:
         </h2>
         <div>
-            <div>
-                <h4>
+            <div class="contact__form__la">
+                <h4 class="office__title">
                     LA office
                 </h4>
-                <p>
+                <p class="office__text">
                     In velit arcu posuere integer sit amet, consectetur nun adipiscing elit. Duis porttitor massa tellus
                 </p>
                 <div>
                     <img src="images/Vector8.svg" alt="location icon">
-                    <p>784 Norman Street, Los Angeles</p>
+                    <p class="office__address">784 Norman Street, Los Angeles</p>
                 </div>
                 <div>
                     <img src="images/Vector9.svg" alt="phone logo">
-                    <a href="tel:493436573355">+49 93 30493943</a>
+                    <a class="office__tel" href="tel:493436573355">+49 93 30493943</a>
                 </div>
                 <div>
                     <img src="images/Vector10.svg" alt="e-mail logo">
-                    <a href="mailto:support@update.com">contact@templatesjungle.com</a>
+                    <a class="office__email" href="mailto:support@update.com">contact@templatesjungle.com</a>
                 </div>
-                <a href="#">Get location</a>
+                <a class="office__link" href="#">Get location</a>
+                <hr>
             </div>
-            <div>
-                <h4>
+            <div class="contact__form__nyc">
+                <h4 class="office__title">
                     NYC office
                 </h4>
-                <p>
+                <p class="office__text">
                     Sit amet, consectetur nun in velit arcu posuere integer. Adipiscing elit duis porttitor massa tellus
                 </p>
                 <div>
                     <img src="images/Vector8.svg" alt="location icon">
-                    <p>1630 Elm Drive, New York City</p>
+                    <p class="office__address">1630 Elm Drive, New York City</p>
                 </div>
                 <div>
                     <img src="images/Vector9.svg" alt="phone logo">
-                    <a href="tel:493436573355">+49 34 36573355</a>
+                    <a class="office__tel" href="tel:493436573355">+49 34 36573355</a>
                 </div>
                 <div>
                     <img src="images/Vector10.svg" alt="e-mail logo">
-                    <a href="mailto:support@update.com">contact@templatesjungle.com</a>
+                    <a class="office__email" href="mailto:support@update.com">contact@templatesjungle.com</a>
                 </div>
-                <a href="#">Get location</a>
+                <a class="office__link" href="#">Get location</a>
+                <hr>
             </div>
         </div>
     </div>
-    <div>
+    <div class="contact__form__send">
         <input type="text" placeholder="Write your name here">
         <hr>
         <input type="email" placeholder="Write your email address">
@@ -258,33 +266,33 @@
     </div>
 </section>
 <footer>
-    <div>
-        <div>
+    <div class="footer__info">
+        <div class="footer__info__item">
             <h4>
                 About void tattoo
             </h4>
-            <p>
+            <p class="footer__info__item__text">
                 Sit amet, consectetur nun in velit arcu posuere integer. Adipiscing elit duis porttitor massa tellus
             </p>
             <div>
                 <img src="images/Vector11.svg" alt="location icon">
-                <p>1630 Elm Drive, New York City</p>
+                <p class="address">1630 Elm Drive, New York City</p>
             </div>
             <div>
                 <img src="images/Vector12.svg" alt="phone logo">
-                <a href="tel:493436573355">+49 34 36573355</a>
+                <a class="phone" href="tel:493436573355">+49 34 36573355</a>
             </div>
             <div>
                 <img src="images/Vector13.svg" alt="e-mail logo">
-                <a href="mailto:support@update.com">contact@templatesjungle.com</a>
+                <a class="email" href="mailto:support@update.com">contact@templatesjungle.com</a>
             </div>
         </div>
-        <div>
+        <div class="footer__info__item">
             <h4>
                 Useful links
             </h4>
             <nav role="navigation">
-              <ul>
+              <ul class="useful__links">
                   <li>
                       <a href="#">
                           About me
@@ -308,30 +316,30 @@
               </ul>
             </nav>
         </div>
-        <div>
+        <div class="footer__info__item">
             <h4>
                 Working time
             </h4>
-            <p>
+            <p class="work__schedule">
                 Mon - Tue / Appointment
             </p>
-            <p>
+            <p class="work__schedule">
                 Wed - Fri / 10:00 - 9:00pm
             </p>
-            <p>
+            <p class="work__schedule">
                 Sat / 10:00 - 6:00pm
             </p>
-            <p>
+            <p class="work__schedule">
                 Sun / no work on this day
             </p>
         </div>
-        <div>
+        <div class="footer__info__item">
             <h4>
                 Get newsletter
             </h4>
-            <p>Elit duis porttitor massa tellus nun in velit arcu posuere integer.</p>
+            <p class="footer__info__item__text">Elit duis porttitor massa tellus nun in velit arcu posuere integer.</p>
             <div>
-                <input type="email" placeholder="Your email address">
+                <input class="email__placeholder" type="email" placeholder="Your email address">
                 <button>
                     <img src="images/la_telegram-plane.svg" alt="telegram plane icon">
                 </button>
@@ -339,7 +347,7 @@
             </div>
         </div>
     </div>
-    <div>
+    <div class="footer__bottom">
         <p>@ 2023 <b>Templates Jungle</b>. All rights reserved.</p>
     </div>
 </footer>
