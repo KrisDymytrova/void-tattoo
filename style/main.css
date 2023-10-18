@@ -204,7 +204,7 @@ h1 {
     text-decoration: none;
 }
 
-.contact__form__send input {
+.contact__form__send input::placeholder {
     font-family: 'Raleway', serif;
     font-style: italic;
     font-size: 18px;
@@ -259,7 +259,7 @@ h1 {
     color: #DBDBDB;
 }
 
-.email__placeholder {
+.email__field input::placeholder {
     font-family: 'Raleway', serif;
     font-style: italic;
     font-size: 16px;
