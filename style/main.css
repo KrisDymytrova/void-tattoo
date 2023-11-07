@@ -1,4 +1,17 @@
+.container {
+  max-width: 1920px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 29px 60px 29px 50px;
+}
+
 .header__nav {
+    max-width: 672px;
+    width: 100%;
     font-family: 'Oswald', serif;
     font-size: 18px;
     line-height: 27px;
@@ -8,12 +21,34 @@
 }
 
 .header__nav__list {
+    display: flex;
+    justify-content: space-between;
     list-style-type: none;
 }
 
 .header__nav__list li a {
     text-decoration: none;
     color: #111111;
+}
+
+.socials {
+  display: flex;
+  gap: 30px;
+}
+
+.billboard {
+  background: url("../images/kristian-angelo.jpg") 100% 100% no-repeat;
+  height: 948px;
+}
+
+.billboard__content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 298px;
+  padding-left: 970px;
+  padding-bottom: 31px;
+  max-width: 637px;
+  width: 100%;
 }
 
 h1 {
@@ -26,6 +61,11 @@ h1 {
     color: #FFFFFF;
 }
 
+.billboard__info p {
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.24);
+    text-stroke: 2px rgba(255, 255, 255, 0.24);
+}
+
 .billboard__info {
     font-family: 'Raleway', serif;
     font-size: 20px;
@@ -33,6 +73,7 @@ h1 {
     letter-spacing: 0.02em;
     color: #FFFFFF;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 45px;
 }
 
 .billboard button, .gallery button, .contact__form__send button {
@@ -45,6 +86,13 @@ h1 {
     color: #FFFFFF;
 }
 
+.billboard button {
+  width: 193px;
+  height: 67px;
+  background: transparent;
+  border: 1px solid #FFFFFF;
+}
+
 .billboard__text {
     font-family: 'Oswald', serif;
     font-weight: 700;
@@ -52,16 +100,52 @@ h1 {
     line-height: 332px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    border: 2px solid rgba(255, 255, 255, 0.24);
+    color: transparent;
+    text-stroke: 2px solid rgba(255, 255, 255, 0.24);
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.24);
+}
+
+.billboard img {
+  position: bottom;
+  z-index: -1;
+}
+
+.my__story {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 289px 159px 289px;
 }
 
 .my__story__number {
-    font-family: 'Rozha One', serif;
+    background: url(../images/marcelina.jpg) no-repeat center center;
+    background-size: 95%;
+    color: #fff;
+    text-align: center;
+    padding: 2em;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.number {
+  font-family: 'Rozha One', serif;
     font-size: 726px;
-    line-height: 1031px;
     letter-spacing: -0.08em;
-    text-transform: uppercase;
-    color: #000000;
+    text-transform: uppercase; 
+}
+
+.my__story__block {
+  display: flex;
+  flex-direction: column;
+  padding-top: 231px;
+}
+
+.my__story__text {
+  display: flex;
+  flex-direction: column;
+  width: 530px;
+  padding-top: 38px;
+  padding-left: 118px;
+  gap: 23px;
 }
 
 .my__story h2, .gallery h2, .contact__form h2 {
@@ -81,7 +165,16 @@ h1 {
     color: #555555;
 }
 
-.my__story button {
+.my__story__text__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+  padding-left: 118px;
+  padding-top: 37px;
+}
+
+.my__story a {
     font-family: 'Oswald', serif;
     font-size: 18px;
     line-height: 27px;
@@ -89,6 +182,53 @@ h1 {
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #111111;
+    text-decoration: none;
+}
+
+.gallery {
+  height: 1680px;
+  background-color: #F9F9F9;
+}
+
+.gallery h2 {
+  padding: 151px 0 75px 310px;
+}
+
+.gallery__images {
+  display: flex;
+  gap: 20px;
+  height: 972px;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.images__button {
+  text-align: center;
+}
+
+.gallery button {
+  height: 67px;
+  width: 176px;
+  background-color: #111111;
+  border: none;
+  margin-top: 75px;
+  padding: 0;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills__block {
+  display: flex;
+  justify-content: space-between;
+  padding: 164px 328px 0 328px;
+  height: 334px;
 }
 
 .skills__numbers {
@@ -99,9 +239,30 @@ h1 {
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: #111111;
+    width: 275px;
+    height: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.skills p {
+.skills__first {
+  background: url("../images/Ellipse_1.png") center center  no-repeat, url("../images/Ellipse_2.png") center center no-repeat;
+}
+
+.skills__second {
+  background: url("../images/Ellipse_1.png") center center no-repeat, url("../images/Ellipse_3.png") center center no-repeat;
+}
+
+.skills__third {
+  background: url("../images/Ellipse_1.png") center center no-repeat, url("../images/Ellipse_4.png") center center no-repeat;
+}
+
+.skills__fourth {
+  background: url("../images/Ellipse_1.png") center center no-repeat, url("../images/Ellipse_5.png") center center no-repeat;
+}
+
+.skills__block p {
     font-family: 'Oswald', serif;
     font-weight: 300;
     font-size: 18px;
@@ -110,6 +271,20 @@ h1 {
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #111111;
+    padding-top: 25px;
+}
+
+.reviews {
+  display: flex;
+  gap: 30px;
+  padding: 54px 324px 52px 385px;
+  height: 438px;
+}
+
+.reviews > img {
+  width: 170px;
+  height: 130px;
+  padding-top: 90px;
 }
 
 .reviews__text {
@@ -118,9 +293,17 @@ h1 {
     line-height: 160%;
     letter-spacing: 0.02em;
     color: #111111;
+    padding-top: 161px;
 }
 
 .reviews__text__author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.reviews__text__author p {
     font-family: 'Oswald', serif;
     font-weight: 300;
     font-size: 24px;
@@ -129,7 +312,15 @@ h1 {
     color: #111111;
 }
 
+.watch__interview {
+  background: url("../images/Rectangle47.jpg") 100% 100% no-repeat;
+  height: 812px;
+}
+
 .watch__interview h2 {
+    padding-top: 246px;
+    margin-left: 310px;
+    margin-bottom: 41px;
     font-family: 'Rozha One', serif;
     font-size: 60px;
     line-height: 110%;
@@ -139,6 +330,14 @@ h1 {
 }
 
 .watch__interview button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 231px;
+  height: 91px;
+  margin-left: 310px;
+  background-color: transparent;
+  border: none;
     font-family: 'Oswald', serif;
     font-size: 18px;
     line-height: 27px;
@@ -147,14 +346,33 @@ h1 {
     color: #FFFFFF;
 }
 
+.watch__interview img {
+  width: 75px;
+  height: 75px;
+}
+
+.articles {
+  display: flex;
+  justify-content: space-between;
+  height: 388px;
+  padding: 164px 222px;
+}
+
+
+.articles__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .articles__item h4 {
-    font-family: 'Oswald', serif;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 187%;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #111111;
+  font-family: 'Oswald', serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 187%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #111111;
 }
 
 .articles__item a {
@@ -165,6 +383,7 @@ h1 {
     letter-spacing: 0.02em;
     color: #111111;
     text-decoration: none;
+    padding-top: 32px;
 }
 
 .articles__item p {
@@ -174,6 +393,30 @@ h1 {
     line-height: 187%;
     letter-spacing: 0.02em;
     color: #ACACAC;
+}
+
+.contact__form {
+  background-color: #F9F9F9;
+  height: 881px;
+}
+
+.contact__form__block {
+  display: flex;
+  justify-content: space-between;
+  padding: 153px 310px 164px 310px;
+}
+
+.contact__form__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact__form__town {
+  display: flex;
+  max-width: 640px;
+  gap: 20px;
+  padding-top: 75px;
 }
 
 .office__title {
@@ -204,6 +447,35 @@ h1 {
     text-decoration: none;
 }
 
+.office__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding-top: 23px;
+  padding-bottom: 31px;
+}
+
+.office__contacts img {
+  margin-right: 10px;
+}
+
+.office__contacts__item {
+  display: flex;
+  align-items: center;
+}
+
+.contact__form__town hr {
+  width: 106px;
+  height: 1px;
+  border: none;
+  margin: 4px 0;
+  background-color: #111111;
+}
+
+.contact__form__send {
+  padding-top: 120px;
+}
+
 .contact__form__send input::placeholder {
     font-family: 'Raleway', serif;
     font-style: italic;
@@ -211,6 +483,54 @@ h1 {
     line-height: 21px;
     letter-spacing: 0.06em;
     color: #555555;
+    width: 600px;
+}
+
+.contact__form__send input {
+  background-color: transparent;
+  border: none;
+  padding: 37px 0 9px 0;
+  width: 600px;
+  font-family: 'Raleway', serif;
+    font-style:normal;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.06em;
+    color:#111111;
+}
+
+.contact__form__send input:focus {
+    outline: none;
+}
+
+.contact__form__send hr {
+  width: 600px;
+  height: 1px;
+  border: none;
+  background-color: #111111;
+}
+
+.contact__form__send button {
+  width: 140px;
+  height: 55px;
+  background-color: #111111;
+  border: none;
+  margin-top: 70px;
+  padding: 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #141414;
+  height: 640px;
+}
+
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  padding: 156px 310px 0 310px;
 }
 
 .footer__info__item h4 {
@@ -221,6 +541,23 @@ h1 {
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 26px;
+}
+
+.footer__address {
+  display: flex;
+  align-items: center;
+}
+
+.footer__address img {
+  margin-right: 10px;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding-top: 26px;
 }
 
 .phone, .email, .address {
@@ -258,6 +595,25 @@ h1 {
     text-decoration: none;
     color: #DBDBDB;
 }
+.email__field {
+  padding-top: 35px;
+}
+
+.email__field__text {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.email__field input {
+  background-color: transparent;
+  border: none;
+  margin-right: 130px;
+  font-family: 'Raleway', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: #DBDBDB;
+}
 
 .email__field input::placeholder {
     font-family: 'Raleway', serif;
@@ -269,10 +625,43 @@ h1 {
     color: #DBDBDB;
 }
 
-.footer__bottom {
+.email__field input:focus {
+  outline: none;
+}
+
+.email__field button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  height: 26px;
+}
+
+.email__field hr {
+  width: 310px;
+  border: none;
+  background-color: #b6b6b6;
+  height: 1px;
+  margin-bottom: 0;
+  margin-top: 12px;
+}
+
+.footer__bottom hr {
+  background-color: #2B2B2B;
+  height: 1px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.footer__bottom p {
+  background-color: #141414;
     font-family: 'Raleway', serif;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.02em;
     color: #DBDBDB;
+    padding-bottom: 37px;
+    padding-top: 37px;
+    margin-left: 310px;
 }
