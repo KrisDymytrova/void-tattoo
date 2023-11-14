@@ -4,169 +4,200 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Example website for a tattoo artist" />
-    <meta name="keywords" content="tattoo artist, tattoo studio, tattoo" />
+    <meta name="description" content="Example website for a tattoo artist"/>
+    <meta name="keywords" content="tattoo artist, tattoo studio, tattoo"/>
 
-    <meta property="og:url" content="http://www.mysite.com" />
-    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.mysite.com"/>
+    <meta property="og:type" content="article"/>
     <meta property="og:title" content="The Void Tattoo"/>
     <meta property="og:description" content="Example website for a tattoo artist"/>
-    <meta property="og:image" content="images/kristian-angelo-ogg.jpg" />
+    <meta property="og:image" content="images/kristian-angelo-ogg.jpg"/>
 
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Raleway:ital,wght@0,400;0,500;0,600;1,100&family=Rozha+One&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Raleway:ital,wght@0,400;0,500;0,600;1,100&family=Rozha+One&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="style/reset.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+          integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
     <link rel="stylesheet" href="style/main.css">
+
+
     <title>The Void Tattoo</title>
 </head>
 <body>
 <header class="container">
     <div class="header__menu">
-      <a href="index.html">
-        <img src="images/the-void-tattoo-logo.png" alt="tattoo artist site logo">
-    </a>
-    <nav class="header__nav" role="navigation">
-        <ul class="header__nav__list">
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#">Gallery</a>
-            </li>
-            <li>
-                <a href="#">Interview</a>
-            </li>
-            <li>
-                <a href="#">Articles</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="socials">
-        <a href="#">
-            <img src="images/la_facebook-f.svg" alt="facebook logo">
+        <a href="index.html">
+            <img src="images/the-void-tattoo-logo.png" alt="tattoo artist site logo">
         </a>
-        <a href="#">
-            <img src="images/ion_logo-instagram.svg" alt="instagram logo">
-        </a>
-        <a href="#">
-            <img src="images/ion_logo-pinterest.svg" alt="pinterest logo">
-        </a>
-        <a href="#">
-            <img src="images/ion_logo-twitter.svg" alt="twitter logo">
-        </a>
-        <a href="#">
-            <img src="images/ion_logo-youtube.svg" alt="youtube logo">
-        </a>
-    </div>
+        <nav class="header__nav" role="navigation">
+            <ul class="header__nav__list">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Gallery</a>
+                </li>
+                <li>
+                    <a href="#">Interview</a>
+                </li>
+                <li>
+                    <a href="#">Articles</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="socials">
+            <a href="https://facebook.com/">
+                <img src="images/la_facebook-f.svg" alt="facebook logo">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/ion_logo-instagram.svg" alt="instagram logo">
+            </a>
+            <a href="https://pinterest.com/">
+                <img src="images/ion_logo-pinterest.svg" alt="pinterest logo">
+            </a>
+            <a href="https://twitter.com/">
+                <img src="images/ion_logo-twitter.svg" alt="twitter logo">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img src="images/ion_logo-youtube.svg" alt="youtube logo">
+            </a>
+        </div>
     </div>
 </header>
 <section class="billboard container">
-  <div class="billboard__content">
-    <h1>
-        I’m Void Sir.
-    </h1>
-    <p class="billboard__info">
-        Tattoos have their own unique power and magic. They not only beautify the body but also the psyche.
-    </p>
-    <a href="#">
-      <button>
-        Read more
-        <img src="images/Vector.svg" alt="">
-    </button>
-    </a>
-  </div>
-  <p class="billboard__text">Tattoo expert</p>
+    <div class="billboard__content">
+        <h1>
+            I’m Void Sir.
+        </h1>
+        <p class="billboard__info">
+            Tattoos have their own unique power and magic. They not only beautify the body but also the psyche.
+        </p>
+        <a href="#" class="button-link">
+            <button class="pointer">
+                Read more
+                <img src="images/Vector.svg" alt="">
+            </button>
+        </a>
+    </div>
+    <p class="billboard__text">Tattoo expert</p>
 </section>
 <section class="container">
-    <div class="my__story">
-      <div class="my__story__number">
-        <div class="number">01</div>
-    </div>
-    <div class="my__story__block">
-        <h2>
-            My <br> Story:
-        </h2>
-        <div class="my__story__text">
-            <p>
-                In velit arcu posuere integer. Dolor sit amet, consectetur nun adipiscing elit. Duis porttitor massa
-                tellus hac vel ante sit sed scelerisque praesent duis volutpat laoreet.
-            </p>
-            <p>
-                Nisl, sit molestie commodo congue. Etiam lectus risus in amet. Commodo molestie fames etiam aenean sed.
-                Pellentesque et venenatis amet, tellus hac vel adipiscing sit. Placerat vitae nisl viverra faucibus
-                tincidunt habitasse amet. Nunc, velit nunc, scelerisque imperdiet nunc.
-            </p>
+    <div class="my__story block">
+        <div class="my__story__number">
+            <div class="number">01</div>
         </div>
-        <div class="my__story__text__link">
-              <a href="#">Know more</a>
-             <img src="images/Vector-black.svg" alt="">
+        <div class="my__story__block">
+            <h2>
+                My <br> Story:
+            </h2>
+            <div class="my__story__text">
+                <p>
+                    In velit arcu posuere integer. Dolor sit amet, consectetur nun adipiscing elit. Duis porttitor massa
+                    tellus hac vel ante sit sed scelerisque praesent duis volutpat laoreet.
+                </p>
+                <p>
+                    Nisl, sit molestie commodo congue. Etiam lectus risus in amet. Commodo molestie fames etiam aenean
+                    sed.
+                    Pellentesque et venenatis amet, tellus hac vel adipiscing sit. Placerat vitae nisl viverra faucibus
+                    tincidunt habitasse amet. Nunc, velit nunc, scelerisque imperdiet nunc.
+                </p>
+            </div>
+            <div class="my__story__text__link">
+                <a href="#">Know more
+                    <img src="images/Vector-black.svg" alt="">
+                </a>
+            </div>
         </div>
-        </div>
-    </div>
     </div>
 </section>
 <section class="gallery container">
     <h2>
         Check my <br> gallery:
     </h2>
-    <div class="gallery__images">
-      <div class="images">
-        <img src="images/pexels-ric-rodrigues-1278566.jpg" alt="tattoo boy">
-        <img src="images/eugene-chystiakov-dF7XPEbnwgs-unsplash.jpg" alt="tattoo girl">
-      </div>
-      <div class="images">
-        <img src="images/pexels-cottonbro-5319864.jpg" alt="tattoo boy">
-        <img src="images/pexels-cottonbro-4125681.jpg" alt="hand with tattoo">
-      </div>
-      <div class="images">
-        <img src="images/reuben-kim-x-NBpxTIO_0-unsplash.jpg" alt="tattoo on the neck">
-        <img src="images/darren-nunis-ftoD84_RRdM-unsplash.jpg" alt="tattoo on the back">
-      </div>
-      <div class="images">
-        <img src="images/joel-muniz-yb5VUJo_Ddw-unsplash.jpg" alt="tattoo boy">
-        <img src="images/alora-griffiths-TTrTW-pFxKw-unsplash.jpg" alt="tattoo girl">
-      </div> 
+    <div class="grid js-masonry"
+         data-masonry-options='{ "itemSelector": ".grid-item", "columnWidth": 465, "gutter": 20 }'>
+        <div class="grid-item grid-item-margin">
+            <img src="images/pexels-ric-rodrigues-1278566.jpg" alt="tattoo boy">
+        </div>
+        <div class="grid-item grid-item--height2 grid-item-margin">
+            <img src="images/pexels-cottonbro-5319864.jpg" alt="tattoo boy">
+        </div>
+        <div class="grid-item grid-item-margin">
+            <img src="images/reuben-kim-x-NBpxTIO_0-unsplash.jpg" alt="tattoo on the neck">
+        </div>
+        <div class="grid-item grid-item--height2 grid-item-margin">
+            <img src="images/joel-muniz-yb5VUJo_Ddw-unsplash.jpg" alt="tattoo boy">
+        </div>
+        <div class="grid-item grid-item--height2">
+            <img src="images/eugene-chystiakov-dF7XPEbnwgs-unsplash.jpg" alt="tattoo girl">
+        </div>
+        <div class="grid-item grid-item--height2">
+            <img src="images/darren-nunis-ftoD84_RRdM-unsplash.jpg" alt="tattoo on the back">
+        </div>
+        <div class="grid-item">
+            <img src="images/pexels-cottonbro-4125681.jpg" alt="hand with tattoo">
+        </div>
+        <div class="grid-item">
+            <img src="images/alora-griffiths-TTrTW-pFxKw-unsplash.jpg" alt="tattoo girl">
+        </div>
     </div>
+
     <div class="images__button">
-      <a href="#">
-        <button>
-          View All
-          <img src="images/Vector.svg" alt="">
-        </button>
-      </a>
+        <a href="#">
+            <button class="pointer">
+                View All
+                <img src="images/Vector.svg" alt="">
+            </button>
+        </a>
     </div>
 </section>
 <section class="skills container">
     <div class="skills__block">
         <div>
-            <div class="skills__numbers skills__first">90%</div>
+            <div class="skills__numbers skills__first">
+                <span>90</span>
+                <span class="skills__percent">%</span>
+            </div>
             <p>
                 Full body tattoo
             </p>
         </div>
         <div>
-            <div class="skills__numbers skills__second">80%</div>
+            <div class="skills__numbers skills__second">
+                <span>80</span>
+                <span class="skills__percent">%</span>
+            </div>
             <p>
                 Safely Piercing
             </p>
         </div>
         <div>
-            <div class="skills__numbers skills__third">75%</div>
+            <div class="skills__numbers skills__third">
+                <span>75</span>
+                <span class="skills__percent">%</span>
+            </div>
             <p>
                 Full colour tattoo
             </p>
         </div>
         <div>
-            <div class="skills__numbers skills__fourth">95%</div>
+            <div class="skills__numbers skills__fourth">
+                <span>95</span>
+                <span class="skills__percent">%</span>
+            </div>
             <p>
                 Temporary tattoo
             </p>
@@ -174,158 +205,185 @@
     </div>
     <div class="reviews">
         <img src="images/Quotes.png" alt="quotes image">
-        <div>
-            <p class="reviews__text">
-                The entire team is extremely kind and friendly. They're <br> fantastic. They're great at what they do! And
-                it's unique. <br> They will properly consult with you.
-            </p>
-            <div class="reviews__text__author">
-                <p><strong>Jack Geoffrey</strong> | Tattoo Artist</p>
-                <div>
-                    <img src="images/Vector3.svg" alt="">
-                    <img src="images/Vector4.svg" alt="">
+        <div class="slider">
+            <div class="slider__item slide-1">
+                <p class="reviews__text">
+                    The entire team is extremely kind and friendly. They're <br> fantastic. They're great at what they
+                    do! And
+                    it's unique. <br> They will properly consult with you.
+                </p>
+                <div class="reviews__text__author">
+                    <span>Jack Geoffrey</span>
+                    <p>|</p>
+                    <p>Tattoo Artist</p>
+                </div>
+            </div>
+            <div class="slider__item slide-1">
+                <p class="reviews__text">
+                    The entire team is extremely kind and friendly. They're fantastic. They're great at what they do!
+                    And
+                    it's unique. They will properly consult with you.
+                </p>
+                <div class="reviews__text__author">
+                    <span>Jack Geoffrey</span>
+                    <p>|</p>
+                    <p>Tattoo Artist</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 <section class="watch__interview container">
-    <h2>
-        “Consider what you desire. Your<br> tattoo artist will never tell you<br> what tattoo to have.”
-    </h2>
-    <a href="#">
-      <button>
-        <img src="images/play.png" alt="play button">
-        <p>Watch it now</p>
-    </button>
-    </a>  
+    <div class="interview">
+        <h2>
+            “Consider what you desire. Your tattoo artist will never tell you what tattoo to have.”
+        </h2>
+        <a href="#" class="button-link">
+            <button class="pointer">
+                <img src="images/play.png" alt="play button">
+                <p>Watch it now</p>
+            </button>
+        </a>
+    </div>
 </section>
-<section class="container">
-    <div class="articles">
-      <article class="articles__item">
-        <h4>
-            Articles:
-        </h4>
-        <img src="images/Rectangle48.jpg" alt="girl makes tattoo">
-        <a href="#">What is the story behind tattooing</a>
-        <p>
-            Feb 16, 2021
-        </p>
-    </article>
-    <article class="articles__item">
-        <h4>
-            Articles:
-        </h4>
-        <img src="images/Rectangle49.jpg" alt="hands with tattoo">
-        <a href="#">Top 10 tattoo myths & misconceptions</a>
-        <p>
-            Feb 17, 2021
-        </p>
-    </article>
-    <article class="articles__item">
-        <h4>
-            Articles:
-        </h4>
-        <img src="images/Rectangle50.jpg" alt="hand in hand">
-        <a href="#">Unbelievable benefits of doing tattoo</a>
-        <p>
-            Feb 20, 2021
-        </p>
-    </article>
+<section class="articles container">
+    <div class="articles__block">
+        <article class="articles__item">
+            <h4>
+                Articles:
+            </h4>
+            <img src="images/Rectangle48.jpg" alt="girl makes tattoo">
+            <a href="#">What is the story behind tattooing</a>
+            <p>
+                Feb 16, 2021
+            </p>
+        </article>
+        <article class="articles__item">
+            <h4>
+                Articles:
+            </h4>
+            <img src="images/Rectangle49.jpg" alt="hands with tattoo">
+            <a href="#">Top 10 tattoo myths & misconceptions</a>
+            <p>
+                Feb 17, 2021
+            </p>
+        </article>
+        <article class="articles__item">
+            <h4>
+                Articles:
+            </h4>
+            <img src="images/Rectangle50.jpg" alt="hand in hand">
+            <a href="#">Unbelievable benefits of doing tattoo</a>
+            <p>
+                Feb 20, 2021
+            </p>
+        </article>
     </div>
 </section>
 <section class="contact__form container">
-  <div class="contact__form__block">
-    <div class="contact__form__info">
-        <h2>
-            Get in touch <br> with me:
-        </h2>
-        <div class="contact__form__town">
-            <div class="contact__form__la">
-                <h4 class="office__title">
-                    LA office
-                </h4>
-                <p class="office__text">
-                    In velit arcu posuere integer sit amet, consectetur nun adipiscing elit. Duis porttitor massa tellus
-                </p>
-                <div class="office__contacts">
-                <div class="office__contacts__item">
-                    <img src="images/Vector8.svg" alt="location icon">
-                    <p class="office__address">784 Norman Street, Los Angeles</p>
+    <div class="contact__form__block block">
+        <div class="contact__form__info">
+            <h2>
+                Get in touch <br> with me:
+            </h2>
+            <div class="contact__form__town">
+                <div class="contact__form__la">
+                    <h4 class="office__title">
+                        LA office
+                    </h4>
+                    <p class="office__text">
+                        In velit arcu posuere integer sit amet, consectetur nun adipiscing elit. Duis porttitor massa
+                        tellus
+                    </p>
+                    <div class="office__contacts">
+                        <div class="office__contacts__item">
+                            <img src="images/Vector8.svg" alt="location icon">
+                            <p class="office__address">784 Norman Street, Los Angeles</p>
+                        </div>
+                        <div class="office__contacts__item">
+                            <img src="images/Vector9.svg" alt="phone logo">
+                            <a class="office__tel" href="tel:493436573355">+49 93 30493943</a>
+                        </div>
+                        <div class="office__contacts__item">
+                            <img src="images/Vector10.svg" alt="e-mail logo">
+                            <a class="office__email" href="mailto:support@update.com">contact@templatesjungle.com</a>
+                        </div>
+                    </div>
+                    <a class="office__link" href="#">Get location</a>
+                    <hr>
                 </div>
-                <div class="office__contacts__item">
-                    <img src="images/Vector9.svg" alt="phone logo">
-                    <a class="office__tel" href="tel:493436573355">+49 93 30493943</a>
+                <div class="contact__form__nyc">
+                    <h4 class="office__title">
+                        NYC office
+                    </h4>
+                    <p class="office__text">
+                        Sit amet, consectetur nun in velit arcu posuere integer. Adipiscing elit duis porttitor massa
+                        tellus
+                    </p>
+                    <div class="office__contacts">
+                        <div class="office__contacts__item">
+                            <img src="images/Vector8.svg" alt="location icon">
+                            <p class="office__address">1630 Elm Drive, New York City</p>
+                        </div>
+                        <div class="office__contacts__item">
+                            <img src="images/Vector9.svg" alt="phone logo">
+                            <a class="office__tel" href="tel:493436573355">+49 34 36573355</a>
+                        </div>
+                        <div class="office__contacts__item">
+                            <img src="images/Vector10.svg" alt="e-mail logo">
+                            <a class="office__email" href="mailto:support@update.com">contact@templatesjungle.com</a>
+                        </div>
+                    </div>
+                    <a class="office__link" href="#">Get location</a>
+                    <hr>
                 </div>
-                <div class="office__contacts__item">
-                    <img src="images/Vector10.svg" alt="e-mail logo">
-                    <a class="office__email" href="mailto:support@update.com">contact@templatesjungle.com</a>
-                </div>
-                </div>
-                <a class="office__link" href="#">Get location</a>
-                <hr>
-            </div>
-            <div class="contact__form__nyc">
-                <h4 class="office__title">
-                    NYC office
-                </h4>
-                <p class="office__text">
-                    Sit amet, consectetur nun in velit arcu posuere integer. Adipiscing elit duis porttitor massa tellus
-                </p>
-                <div class="office__contacts">
-                <div class="office__contacts__item">
-                    <img src="images/Vector8.svg" alt="location icon">
-                    <p class="office__address">1630 Elm Drive, New York City</p>
-                </div>
-                <div class="office__contacts__item">
-                    <img src="images/Vector9.svg" alt="phone logo">
-                    <a class="office__tel" href="tel:493436573355">+49 34 36573355</a>
-                </div>
-                <div class="office__contacts__item">
-                    <img src="images/Vector10.svg" alt="e-mail logo">
-                    <a class="office__email" href="mailto:support@update.com">contact@templatesjungle.com</a>
-                </div>
-                </div>
-                <a class="office__link" href="#">Get location</a>
-                <hr>
             </div>
         </div>
+        <div class="contact__form__send">
+            <form>
+                <label for="name">
+                    <input type="text" id="name" placeholder="Write your name here">
+                </label>
+                <hr>
+
+                <label for="email">
+                    <input type="email" id="email" placeholder="Write your email address">
+                </label>
+                <hr>
+
+                <label for="message">
+                    <input type="text" id="message" placeholder="Write your messages here">
+                </label>
+                <hr>
+            </form>
+            <button class="pointer">
+                Send it
+            </button>
         </div>
-    <div class="contact__form__send">
-        <input type="text" placeholder="Write your name here">
-        <hr>
-        <input type="email" placeholder="Write your email address">
-        <hr>
-        <input type="text" placeholder="Write your messages here">
-        <hr>
-        <button>
-            Send it
-        </button>
     </div>
-  </div>
 </section>
 <footer class="container">
-    <div class="footer__info">
+    <div class="footer__info block">
         <div class="footer__info__item">
             <h4>
                 About void tattoo
             </h4>
             <p class="footer__info__item__text">
-                Sit amet, consectetur nun in velit<br> arcu posuere integer. Adipiscing elit<br> duis porttitor massa tellus
+                Sit amet, consectetur nun in velit arcu posuere integer. Adipiscing elit duis porttitor massa tellus
             </p>
             <div class="footer__contacts">
-            <div class="footer__address">
-                <img src="images/Vector11.svg" alt="location icon">
-                <p class="address">1630 Elm Drive, New York City</p>
-            </div>
-            <div class="footer__address">
-                <img src="images/Vector12.svg" alt="phone logo">
-                <a class="phone" href="tel:493436573355">+49 34 36573355</a>
-            </div>
-            <div class="footer__address">
-                <img src="images/Vector13.svg" alt="e-mail logo">
-                <a class="email" href="mailto:support@update.com">contact@templatesjungle.com</a>
-            </div>
+                <div class="footer__address">
+                    <img src="images/Vector11.svg" alt="location icon">
+                    <p class="address">1630 Elm Drive, New York City</p>
+                </div>
+                <div class="footer__address">
+                    <img src="images/Vector12.svg" alt="phone logo">
+                    <a class="phone" href="tel:493436573355">+49 34 36573355</a>
+                </div>
+                <div class="footer__address">
+                    <img src="images/Vector13.svg" alt="e-mail logo">
+                    <a class="email" href="mailto:support@update.com">contact@templatesjungle.com</a>
+                </div>
             </div>
         </div>
         <div class="footer__info__item">
@@ -333,28 +391,28 @@
                 Useful links
             </h4>
             <nav role="navigation">
-              <ul class="useful__links">
-                  <li>
-                      <a href="#">
-                          About me
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#">
-                          My gallery
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#">
-                          My services
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#">
-                          Contact me
-                      </a>
-                  </li>
-              </ul>
+                <ul class="useful__links">
+                    <li>
+                        <a href="#">
+                            About Me
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            My Gallery
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            My Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Contact Me
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </div>
         <div class="footer__info__item">
@@ -378,13 +436,15 @@
             <h4>
                 Get newsletter
             </h4>
-            <p class="footer__info__item__text">Elit duis porttitor massa tellus nun<br> in velit arcu posuere integer.</p>
+            <p class="footer__info__item__text">Elit duis porttitor massa tellus nun in velit arcu posuere integer.</p>
             <div class="email__field">
                 <div class="email__field__text">
-                <input type="email" placeholder="Your email address">
-                <button>
-                    <img src="images/la_telegram-plane.svg" alt="telegram plane icon">
-                </button>
+                    <label for="e-mail">
+                        <input type="email" id="e-mail" placeholder="Your email address">
+                    </label>
+                    <button class="pointer">
+                        <img src="images/la_telegram-plane.svg" alt="telegram plane icon">
+                    </button>
                 </div>
                 <hr>
             </div>
@@ -395,5 +455,17 @@
         <p>@ 2023 <b>Templates Jungle</b>. All rights reserved.</p>
     </div>
 </footer>
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.slider').slick({});
+    });
+</script>
+
 </body>
 </html>
