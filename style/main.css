@@ -157,12 +157,6 @@ h1 {
     -webkit-text-stroke: 2px rgba(255, 255, 255, 0.24);
 }
 
-.billboard img {
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
-}
-
 .my__story {
     display: flex;
     justify-content: space-between;
@@ -208,6 +202,12 @@ h1 {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #111111;
+}
+
+.my__story h2 {
+  display: block;
+  max-width: 236px;
+  width: 100%;
 }
 
 .my__story p {
